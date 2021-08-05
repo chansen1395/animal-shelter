@@ -1,6 +1,6 @@
 .box {
-  width: 50%;
-  height: 150%;
+  width: 600px%;
+  height: 800px;
   border: solid rgb(170, 88, 88);
   border-width: 20px;
   display: block;
@@ -15,20 +15,25 @@
   height: fit-content;
 }
 
-.column h3 p{
-  /* columns: 20px 2;
-  text-align: center;
-  font-variant: small-caps;
-  column-width: 20px;
-  height: fit-content;
-  float: left; */
-  background-color: aquamarine;
+.column-container{
+  display: flex;
+  width: 100%;
 }
 
-.column2 {
+.column {
+  flex: 1;
+  padding: 15px;
   width: 200px;
   float: left;
   background-color: aquamarine;
+}
+
+.column-info {
+  flex: 1;
+  padding: 15px;
+  width: 200px;
+  float: left;
+  background-color: rgb(248, 255, 185);
 }
 
 .content h3 p {
@@ -42,4 +47,16 @@
   font-style: italic;
   outline: black;
   outline-width: 3px;
+}
+
+.button {
+  border-radius: 0px;
+  border-color: rgb(255, 123, 123);
+  cursor: pointer;
+  border-width: 5px;
+}
+
+.center {
+  text-align: center;
+  text-decoration: underline dotted;
 }
